@@ -1,0 +1,202 @@
+
+<!DOCTYPE html> <!-- HTML5 standardında bir belge olduğunu belirtir -->
+<html lang="en"> <!-- Sayfa dili İngilizce olarak ayarlandı -->
+    <head>
+        <meta charset="UTF-8"> <!-- Karakter seti UTF-8 olarak belirlendi -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobil uyumluluk için viewport ayarlarını yapar -->
+
+        <link rel="stylesheet" href="assets/css/styles.css"> <!-- Harici CSS dosyasını projeye dahil eder -->
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'> <!-- Boxicons ikon kütüphanesini yükler -->
+
+        <title>Portfolio website complete</title> <!-- Tarayıcı sekmesinde görünecek başlık -->
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header"> <!-- Sabit üst menü alanı -->
+            <nav class="nav bd-grid"> <!-- Grid tabanlı navigasyon çubuğu -->
+                <div>
+                    <a href="#" class="nav__logo">Tolga</a> <!-- Logo veya marka ismi -->
+                </div>
+
+                <div class="nav__menu" id="nav-menu"> <!-- Menü kapsayıcı (mobil açılır/kapanır) -->
+                    <ul class="nav__list"> <!-- Menü öğeleri listesi -->
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Ev</a></li> <!-- Ana sayfa bağlantısı -->
+                        <li class="nav__item"><a href="#about" class="nav__link">Hakkında</a></li> <!-- Hakkımda bağlantısı -->
+                        <li class="nav__item"><a href="#skills" class="nav__link">Yetenekler</a></li> <!-- Yetenekler bağlantısı -->
+                        <li class="nav__item"><a href="#work" class="nav__link">İş</a></li> <!-- Projeler bağlantısı -->
+                        <li class="nav__item"><a href="#contact" class="nav__link">Bizi ulaşın</a></li> <!-- İletişim bağlantısı -->
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle"> <!-- Mobil menü ikonu -->
+                    <i class='bx bx-menu'></i> <!-- Hamburger menü simgesi -->
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main"> <!-- Ana içerik alanı -->
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home"> <!-- Ana sayfa bölümü -->
+                <div class="home__data"> <!-- Tanıtım metni alanı -->
+                    <h1 class="home__title">merhaba,<br> ben  <span class="home__title-color">Tolga</span><br> Öğrenciyim </h1> <!-- Başlık ve ad -->
+                    
+                    <a href="#" class="button">Tıkla</a> <!-- İletişim butonu -->
+                </div>
+
+                <div class="home__social"> <!-- Sosyal medya ikonları -->
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a> <!-- LinkedIn ikonu -->
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance'></i></a> <!-- Behance ikonu -->
+                    <a href="" class="home__social-icon"><i class='bx bxl-github'></i></a> <!-- GitHub ikonu -->
+                </div>
+
+                <div class="home__img"> <!-- Profil resmi ve SVG maskeleme -->
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- SVG konteyner -->
+                        <mask id="mask0" mask-type="alpha"> <!-- Maske tanımı -->
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/> <!-- Maske şekli -->
+                        </mask>
+                        <g mask="url(#mask0)"> <!-- Maske uygulanan grup -->
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/> <!-- Arka plan şekli -->
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/assets/img/about.jpg"/> <!-- Profil resmi -->
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about"> <!-- Hakkımda bölümü -->
+                <h2 class="section-title">Hakkında</h2> <!-- Bölüm başlığı -->
+
+                <div class="about__container bd-grid"> <!-- Grid düzeni -->
+                    <div class="about__img">
+                        <img src="assets/img/assets/img/2b148d59-e406-44d4-800e-b4e54ac43338.jfif" alt=""> <!-- Hakkımda görseli -->
+                        
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Ben Tolga</h2> <!-- Alt başlık -->
+                        <p class="about__text">28.03.2004 yılında İstanbul\ fatih te dünaya ya geldim ilk okulum Nail Reşit ilkokulumu orta okulumu nail reşit orta okulunda tamamladım lisede  şafak okullarını bitirdim ardından haliç üniversitesinde öğrenimime devam etmekteyim  <nav></nav></p> <!-- Açıklama metni -->           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills"> <!-- Yetenekler bölümü -->
+                <h2 class="section-title">Yetenekler</h2> <!-- Bölüm başlığı -->
+
+                <div class="skills__container bd-grid"> <!-- Grid içeriği -->         
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Yetenekler</h2> <!-- Alt başlık -->
+                        <p class="skills__text">Ticaretle uğraştığım için insanların yüzlerine baktığım kısa bir özet çıkarta biliyorum ve konuşmam gereken her kelimeyi ona göre seçerek insanların ürünlerimi almasını sağlıyorum</p> <!-- Açıklama metni -->
+                        <div class="skills__data"> <!-- Yetenek veri bloğu -->
+                            <div class="skills__names"> <!-- İsim ve ikon -->
+                                <i class='bx bxl-html5 skills__icon'></i> <!-- HTML5 ikonu -->
+                                <span class="skills__name">insan piskolejisi</span> <!-- HTML5 adı -->
+                            </div>
+                            <div class="skills__bar skills__html"> <!-- Yetenek seviyesi barı -->
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span> <!-- Yüzdelik -->
+                            </div>
+                        </div>
+                        <div class="skills__data"> <!-- CSS3 veri bloğu -->
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i> <!-- CSS3 ikonu -->
+                                <span class="skills__name">Satış kabiliyeti</span> <!-- CSS3 adı -->
+                            </div>
+                            <div class="skills__bar skills__css"> <!-- Bar -->
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span> <!-- Yüzde -->
+                            </div>
+                        </div>
+                        <div class="skills__data"> <!-- JS veri bloğu -->
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon'></i> <!-- JavaScript ikonu -->
+                                <span class="skills__name">Ürün Pazarlama</span> <!-- İsim -->
+                            </div>
+                            <div class="skills__bar skills__js"> <!-- Bar -->
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span> <!-- Yüzde -->
+                            </div>
+                        </div>
+                        <div class="skills__data"> <!-- UX/UI veri bloğu -->
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i> <!-- UX/UI ikonu -->
+                                <span class="skills__name">Müşteri Memnuniyeti</span> <!-- İsim -->
+                            </div>
+                            <div class="skills__bar skills__ux"> <!-- Bar -->
+                            </div>
+                            <div>
+                                <span class="skills__percentage">100%</span> <!-- Yüzde -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/assets/img/indir (1).jfif" alt="" class="skills__img"> <!-- Yetenek görseli -->
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work"> <!-- Projeler bölümü -->
+                <h2 class="section-title">İŞ</h2> <!-- Başlık -->
+
+                <div class="work__container bd-grid"> <!-- Proje görsel kapsayıcı -->
+                    <a href="" class="work__img">
+                        <img src="assets/img/assets/img/indir (2).jfif" alt=""> <!-- Proje 1 -->
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/assets/img/indir (3).jfif" alt=""> <!-- Proje 2 -->
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt=""> <!-- Proje 3 -->
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/assets/img/indir.jfif alt=""> <!-- Proje 4 -->
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt=""> <!-- Proje 5 -->
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt=""> <!-- Proje 6 -->
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact"> <!-- İletişim bölümü -->
+                <h2 class="section-title">Bize ulaşın</h2> <!-- Başlık -->
+
+                <div class="contact__container bd-grid"> <!-- Form kapsayıcı -->
+                    <form action="" class="contact__form"> <!-- İletişim formu -->
+                        <input type="text" placeholder="Name" class="contact__input"> <!-- İsim alanı -->
+                        <input type="mail" placeholder="Email" class="contact__input"> <!-- Email alanı -->
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea> <!-- Mesaj alanı -->
+                        <input type="button" value="Enviar" class="contact__button button"> <!-- Gönder düğmesi -->
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer"> <!-- Alt bilgi alanı -->
+            <p class="footer__title">Tolga</p> <!-- Site başlığı -->
+            <div class="footer__social"> <!-- Sosyal ikonlar kapsayıcısı -->
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a> <!-- Facebook -->
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a> <!-- Instagram -->
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a> <!-- Twitter -->
+            </div>
+            <p class="footer__copy">&#169; Bedimcode. All rights reserved</p> <!-- Telif hakkı metni -->
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script> <!-- Scroll animasyonu kütüphanesi -->
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script> <!-- Ana JavaScript dosyası -->
+    </body>
+</html>
